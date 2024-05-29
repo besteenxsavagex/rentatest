@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Severyanin</title>
+    <script defer src="/Scripts/hero.js"></script>
+    <script defer src="/Scripts/magnbtn.js"></script>
+    <script defer src="/Scripts/headeranimation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@latest/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+</head>
+<body>
+    <!-- Шапка -->
+    <script src="/Components/header.js"></script>
+    <!-- Умный поиск -->
+    <div class="hero_search">
+        <div class="column">
+            <div><b>Простой помощник поиска в нашем большого ассортименте</b></div>
+            <div>Выберите услугу, затем выберите нужную вам категорию</div>
+        </div>
+        <div class="row">
+            <button class="yellow-border-btn magnetic">АРЕНДА</button>
+            <button class="yellow-border-btn magnetic">ПОКУПКА</button>
+        </div>
+        <div class="row-2">
+            <div class="hero">
+                <button class="category-button">Выбор категории</button>
+                <img src="img/down_selection_arrow.svg" alt="Стрелка вниз до нажатия" class="arrow-svg">
+                <!-- Переносим модальное окно сюда -->
+            </div>
+            <button class="yellow-button magnetic">НАЧАТЬ ПОИСК</button>
+        </div>
+    </div>
+    <!-- Окошко категорий умного поиска аренды -->
+    <div class="category-popup">
+        <ul class="category-list">
+            <li><a href="/Catalog/Wall-formwork/wall-formwork.html">Арендовать опалубку стен</a></li>
+            <li><a href="/Catalog/Floor-Formwork/floor-formwork.html">Арендовать опалубку перекрытий</a></li>
+            <li><a href="/Catalog/Columns-Formwork/columns-formwork.html">Арендовать опалубку колонн</a></li>
+            <li><a href="/Catalog/Accessories-Formwork/accessories-formwork.html">Арендовать комплектующие для опалубки</a></li>
+            <li><a href="/Catalog/Bridge-Formwork/bridge-formwork.html">Арендовать мостовые опорные подмости</a></li>
+            <li><a href="/Catalog/auto-rent/auto-rent.html">Арендовать технику</a></li>
+        </ul>
+    </div>
+    <!-- Окошко категорий умного поиска покупки -->
+    <div class="category-popup-sell">
+        <ul class="category-list">
+            <li><a href="/Catalog/Wall-formwork/wall-formwork.html">Купить опалубку стен</a></li>
+            <li><a href="/Catalog/Floor-Formwork/floor-formwork.html">Купить опалубку перекрытий</a></li>
+            <li><a href="/Catalog/Columns-Formwork/columns-formwork.html">Купить опалубку колонн</a></li>
+            <li><a href="/Catalog/Accessories-Formwork/accessories-formwork.html">Купить комплектующие для опалубки</a></li>
+            <li><a href="/Catalog/Bridge-Formwork/bridge-formwork.html">Купить мостовые опорные подмости</a></li>
+        </ul>
+    </div>
+    <div class="big-header">
+        <img src="/img/personal/logistic/logisctic.JPG" class="background-image" alt="Фоновое изображение">
+        <div class="darken-overlay"></div> <!-- Затемняющий слой -->
+        <div class="big-header-content">
+            <h1>Статейный раздел</h1>
+            <p>Если вы хотите просмотреть товары для аренды или покупки, <br>нажмите на соответствующую кнопку и выберите из доступных предложений.</p>
+        </div>
+        
+    </div>
+    <!-- Начало основных блоков -->
+    <main>
+        <div class="team-container">
+            <div class="team-column left">
+                <div class="team-row">
+                    <div class="team-member">
+                        <img src="/img/personal/Gumerova.JPG" alt="Employee 1">
+                        <div class="text">Гумерова Анна<br>Операционный директор</div>
+                    </div>
+                    <div class="team-member">
+                        <img src="/img/personal/Busell.JPG" alt="Employee 1">
+                        <div class="text">Бусел Мария<br>Менеджер отдела продаж</div>
+                    </div>
+                    <div class="team-member">
+                        <img src="/img/personal/Kristi.JPG" alt="Employee 2">
+                        <div class="text">Коростелева Кристина<br>Менеджер отдела продаж</div>
+                    </div>
+                    <div class="team-member">
+                        <img src="/img/personal/Olga.JPG" alt="Employee 9">
+                        <div class="text">Федорова Ольга<br>Бухгалтер</div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-column center">
+                <div class="team-row">
+                    <div class="team-member">
+                        <img src="/img/personal/Koshienko.JPG" alt="Employee 3">
+                        <div class="text">Кощиенко Владимир<br>Начальник склада</div>
+                    </div>
+                    <div class="team-member">
+                        <img src="/img/personal/Curly.JPG" alt="Employee 4">
+                        <div class="text">Кудрявцев Владислав<br>Менеджер отдела продаж</div>
+                    </div>
+                    <div class="team-member">
+                        <img src="/img/personal/Matveeva.JPG" alt="Employee 5">
+                        <div class="text">Матвеева Екатерина<br>Юрист</div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-column right">
+                <div class="team-row">
+                    <div class="team-member">
+                        <img src="/img/personal/Medved.JPG" alt="Employee 6">
+                        <div class="text">Медведев Вячеслав<br>Начальник отдела логистики</div>
+                    </div>
+                    <div class="team-member">
+                        <img src="/img/personal/Nikonov.JPG" alt="Employee 7">
+                        <div class="text">Никонов Михаил<br>Менеджер отдела продаж</div>
+                    </div>
+                    <div class="team-member">
+                        <img src="/img/personal/Sokolov.JPG" alt="Employee 8">
+                        <div class="text">Соколов Алексей<br>Начальник отдела продаж</div>
+                    </div>
+                    <div class="team-member">
+                        <img src="/img/personal/Damir.JPG" alt="Employee 10">
+                        <div class="text">Халиуллов Дамир<br>Менеджер отдела продаж</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- New Transportation Section -->
+        <section class="transport-section">
+            <h2>Наш Транспорт</h2>
+            <div class="transport-gallery">
+                <div class="transport-item">
+                    <img src="/img/bgmg/t1.JPG" alt="Transport 1">
+                </div>
+                <div class="transport-item">
+                    <img src="/img/bgmg/t2.JPG" alt="Transport 2">
+                </div>
+                <div class="transport-item">
+                    <img src="/img/bgmg/t3.JPG" alt="Transport 3">
+                </div>
+                <div class="transport-item">
+                    <img src="/img/bgmg/t4.JPG" alt="Transport 4">
+                </div>
+                <div class="transport-item">
+                    <img src="/img/bgmg/t5.JPG" alt="Transport 5">
+                </div>
+                <div class="transport-item">
+                    <img src="/img/bgmg/t6.JPG" alt="Transport 6">
+                </div>
+                <div class="transport-item">
+                    <img src="/img/bgmg/t7.JPG" alt="Transport 7">
+                </div>
+                <div class="transport-item">
+                    <img src="/img/bgmg/t8.JPG" alt="Transport 8">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script defer src="/Components/footer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            gsap.registerPlugin(ScrollTrigger);
+    
+            const leftColumn = document.querySelector('.team-column.left');
+            const rightColumn = document.querySelector('.team-column.right');
+    
+            gsap.set(leftColumn, { y: 200 });
+            gsap.set(rightColumn, { y: 200 });
+    
+            gsap.to(leftColumn, {
+                y: -425,
+                scrollTrigger: {
+                    trigger: leftColumn,
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: 1,
+                    ease: "power1.inOut"
+                }
+            });
+    
+            gsap.to(rightColumn, {
+                y: -425,
+                scrollTrigger: {
+                    trigger: rightColumn,
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: 1,
+                    ease: "power1.inOut"
+                }
+            });
+        });
+    </script>
+</body>
+</html>
