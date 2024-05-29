@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Смазка для опалубки "Эмульсол"</title>
+    <script src="/Scripts/magnbtn.js" defer></script>
+    <script src="/Scripts/headeranimation.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <!-- Шапка -->
+    <script src="/Components/header.js"></script>
+    <main class="first-main" style="padding-top: 0; margin: 0;">
+        <div class="left-side">
+            <div class="back" onclick="window.history.back()">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H19v-2z"/></svg>
+                Вернуться к поиску
+            </div>
+            
+            <div class="h1">Смазка для опалубки "Эмульсол"</div>
+            <div class="h2">
+                Оставьте свои контакты, чтобы наши специалисты подготовили для вас индивидуальное предложение. Или позвоните нам прямо сейчас!
+            </div>
+            <div class="tags">
+                <div class="tag">Аренда</div>
+                <div class="tag">Покупка</div>
+            </div>
+            <div class="price">
+                Запросить прайс
+                <a href="new-application.html"><button class="yellow-button-bl magnetic">Оставить заявку</button></a>
+            </div>
+        </div>
+        
+        <div class="right-side">
+            <!-- 3D-пространство -->
+            <div class="content-box" style="margin-top: 10%; width: 100%; height: 65vh; background-color: white;">
+                <model-viewer
+                    src="/details/formwork-oil/formwork_oil.glb" 
+                    alt="3D модель смазки для опалубки"
+                    auto-rotate
+                    camera-controls
+                    style="width: 100%; height: 100%;">
+                </model-viewer>
+            </div>
+            
+            <!-- Описание товара -->
+            <div class="right-text">
+                <h1>Описание товара</h1>
+                <p>
+                    Смазка для опалубки "Эмульсол" применяется для предотвращения прилипания бетона к опалубке. Она обеспечивает легкий демонтаж и помогает продлить срок службы опалубочных материалов, таких как фанера и сталь. Использование этой смазки также способствует получению гладких бетонных поверхностей после снятия опалубки.
+                </p>
+                <h1>Особенности:</h1>
+                <ul>
+                    <li>Снижает адгезию бетона к опалубке, облегчая демонтаж.</li>
+                    <li>Предотвращает коррозию опалубочных материалов.</li>
+                    <li>Повышает срок службы опалубки.</li>
+                </ul>
+                <h1>Применение:</h1>
+                <p>
+                    Смазка для опалубки "Эмульсол" применяется в строительстве для легкого отделения бетона от опалубки. Она помогает предотвратить прилипание бетона к опалубке, что упрощает демонтаж и снижает износ опалубочных материалов. Идеально подходит для опалубки стен, перекрытий и других конструкций.
+                </p>
+            </div>
+            
+            <!-- Рекомендованные товары -->
+            <div class="recomended">
+                <div class="block2">
+                    <model-viewer 
+                        src="/details/laminated-plywood/laminated_plywood_01.glb" 
+                        alt="3D модель ламинированной фанеры"
+                        camera-orbit="45deg 120deg"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content1">
+                        <h1>Ламинированная фанера</h1>
+                        <div class="description">
+                            Используется в опалубке для создания гладкой бетонной поверхности.
+                        </div>
+                        <button class="gray-button magnetic">Узнать больше</button>
+                    </div>
+                </div>
+                
+                <div class="block2">
+                    <model-viewer 
+                        src="/details/tie-rod/tie_rod_01.glb" 
+                        alt="3D модель стяжного винта"
+                        camera-orbit="45deg 120deg"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content1">
+                        <h1>Стяжной винт для опалубки</h1>
+                        <div class="description">
+                            Используется для соединения элементов опалубки, обеспечивая надежное крепление.
+                        </div>
+                        <button class="gray-button magnetic">Узнать больше</button>
+                    </div>
+                </div>
+                
+                <div class="block2">
+                    <model-viewer 
+                        src="/details/tie-nut/tie_nut_01.glb" 
+                        alt="3D модель стяжной гайки"
+                        camera-orbit="45deg 120deg"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content1">
+                        <h1>Стяжная гайка для опалубки</h1>
+                        <div class="description">
+                            Используется для закрепления стяжного винта.
+                        </div>
+                        <button class="gray-button magnetic">Узнать больше</button>
+                    </div>
+                </div>
+                
+                <div class="block2">
+                    <model-viewer 
+                        src="/details/formwork-brace/formwork_brace_01.glb" 
+                        alt="3D модель подкоса для опалубки"
+                        camera-orbit="45deg 120deg"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content1">
+                        <h1>Подкос для опалубки</h1>
+                        <div class="description">
+                            Предоставляет дополнительную поддержку и устойчивость для опалубки.
+                        </div>
+                        <button class="gray-button magnetic">Узнать больше</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="/Components/footer.js" defer></script>
+    </main>
+</body>
+</html>

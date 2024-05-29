@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Severyanin</title>
+    <script src="/Scripts/magnbtn.js" defer></script>
+    <script src="/Scripts/filtr.js" defer></script>
+    <script src="/Scripts/headeranimation.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <!-- Шапка -->
+    <script src="/Components/header.js"></script>
+    <div class="hero_search1">
+        <div class="column">
+            <div><b>Простой помощник поиска в нашем большого ассортименте</b></div>
+            <div>Выберите услугу, затем выберите нужную вам категорию</div>
+        </div>
+        <div class="hero1">
+            <a href="/new-application.html"><button class="yellow-button-b magnetic">ОСТАВИТЬ ЗАЯВКУ</button></a>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <main class="first-main portfolio">
+            <!-- Новый блок с размытой картинкой -->
+            <div class="big-header">
+                <img src="/img/portfolio/vserosdetcentr/2.jfif" class="background-image" alt="Фоновое изображение">
+                <div class="darken-overlay"></div> <!-- Затемняющий слой -->
+                <div class="big-header-content">
+                    <h1>Опалубка перекрытий</h1>
+                    <p>Если вы хотите просмотреть товары для аренды или покупки, <br>нажмите на соответствующую кнопку и выберите из доступных предложений.</p>
+                    <div class="product-actions1">
+                        <button class="white-border-btn magnetic pm">АРЕНДОВАТЬ</button>
+                        <button class="white-border-btn magnetic pm">КУПИТЬ</button>
+                    </div>
+                </div>
+                
+            </div>
+
+        <!-- Блоки -->
+        <div class="blocks-container">
+            <!-- Блок 1 -->
+            <div class="blocks-container">
+                <div class="block">
+                    <model-viewer 
+                        src="/details/tie-rod/coupling_screw_01.glb" 
+                        alt="3D модель Торцевая стойка ограждения"
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Опалубка перекрытий</h2>
+                        <h1>Опалубка перекрытий на телескопических стойках</h1>
+                        <div class="options">
+                            
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Floor-Formwork/telescopic-slab-formwork.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+    
+                <!-- Блок 2 -->
+                <div class="block">
+                    <model-viewer 
+                        src="/details/wedge-lock/Wedge lock.glb" 
+                        alt="3D модель Замок клиновой"
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Опалубка перекрытий</h2>
+                        <h1>Балочно-ригельная опалубка</h1>
+                        <div class="options">
+                            <div class="option">Аренда</div>
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Floor-Formwork/beam-slab-formwork.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+    
+                <!-- Блок 3 -->
+                <div class="block">
+                    <model-viewer 
+                        src="/details/long-formwork-lock/extended_lock.glb" 
+                        alt="3D модель Замок удлиненный"
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Опалубка перекрытий</h2>
+                        <h1>Опалубка перекрытий Cup-Lock</h1>
+                        <div class="options">
+                            <div class="option">Аренда</div>
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Floor-Formwork/cup-lock-slab.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+    
+                <!-- Блок 4 -->
+                <div class="block">
+                    <model-viewer 
+                        src="/details/tie-nut/nut_01_.glb" 
+                        alt="3D модель Гайка стяжная"
+                        
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Опалубка перекрытий</h2>
+                        <h1>Опалубка перекрытий ХСИ</h1>
+                        <div class="options">
+                            <div class="option">Аренда</div>
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Floor-Formwork/hsi-slab-formwork.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+    
+                <!-- Блок 5 -->
+                <div class="block">
+                    <model-viewer 
+                        src="/details/rack-lock/Rack lock.glb" 
+                        alt="3D модель Замок реечный"
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Опалубка перекрытий</h2>
+                        <h1>Рамная опалубка перекрытий</h1>
+                        <div class="options">
+                            <div class="option">Аренда</div>
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Floor-Formwork/rama-formwork.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <script src="/Components/footer.js" defer></script>
+    </main>
+</body>
+</html>

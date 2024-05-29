@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Severyanin</title>
+    <script src="/Scripts/magnbtn.js" defer></script>
+    <script src="/Scripts/filtr.js" defer></script>
+    <script src="/Scripts/headeranimation.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <!-- Шапка -->
+    <script src="/Components/header.js"></script>
+    <div class="hero_search1">
+        <div class="column">
+            <div><b>Простой помощник поиска в нашем большого ассортименте</b></div>
+            <div>Выберите услугу, затем выберите нужную вам категорию</div>
+        </div>
+        <div class="hero1">
+            <a href="/new-application.html"><button class="yellow-button-b magnetic">ОСТАВИТЬ ЗАЯВКУ</button></a>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <main class="first-main portfolio">
+            <!-- Новый блок с размытой картинкой -->
+            <div class="big-header">
+                <img src="/img/portfolio/vserosdetcentr/2.jfif" class="background-image" alt="Фоновое изображение">
+                <div class="darken-overlay"></div> <!-- Затемняющий слой -->
+                <div class="big-header-content">
+                    <h1>Комплектующие для <br> опалубки</h1>
+                    <p>Если вы хотите просмотреть товары для аренды или покупки, <br>нажмите на соответствующую кнопку и выберите из доступных предложений.</p>
+                    <div class="product-actions1">
+                        <button class="white-border-btn magnetic pm">АРЕНДОВАТЬ</button>
+                        <button class="white-border-btn magnetic pm">КУПИТЬ</button>
+                    </div>
+                </div>
+                
+            </div>
+
+        <!-- Блоки -->
+        <div class="blocks-container">
+            <!-- Блок 1 -->
+            <div class="blocks-container">
+                <div class="block">
+                    <model-viewer 
+                        src="/details/tie-rod/tie-rod.glb" 
+                        alt="3D модель Винт стяжной"
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Комплектующие для опалубки</h2>
+                        <h1>Винт стяжной для опалубки</h1>
+                        <div class="options">
+                            <div class="option">Аренда</div>
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Accessories-Formwork/tie-rod.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+    
+                <!-- Блок 2 -->
+                <div class="block">
+                    <model-viewer 
+                        src="/details/wedge-lock/Wedge_lock.glb" 
+                        alt="3D модель Замок клиновой"
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Комплектующие для опалубки</h2>
+                        <h1>Замок клиновой для опалубки</h1>
+                        <div class="options">
+                            <div class="option">Аренда</div>
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Accessories-Formwork/wedge-lock.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+    
+                <!-- Блок 3 -->
+                <div class="block">
+                    <model-viewer 
+                        src="/details/long-formwork-lock/extended-lock.glb" 
+                        alt="3D модель Замок удлиненный"
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Комплектующие для опалубки</h2>
+                        <h1>Замок удлиненный для опалубки</h1>
+                        <div class="options">
+                            <div class="option">Аренда</div>
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Accessories-Formwork/long-formwork-lock.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+    
+                <!-- Блок 4 -->
+                <div class="block">
+                    <model-viewer 
+                        src="/details/tie-nut/tie-nut.glb" 
+                        alt="3D модель Гайка стяжная"
+                        
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Комплектующие для опалубки</h2>
+                        <h1>Гайка стяжная для опалубки</h1>
+                        <div class="options">
+                            <div class="option">Аренда</div>
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Accessories-Formwork/tie-nut.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+    
+                <!-- Блок 5 -->
+                <div class="block">
+                    <model-viewer 
+                        src="/details/rack-lock/Rack-lock.glb" 
+                        alt="3D модель Замок реечный"
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Комплектующие для опалубки</h2>
+                        <h1>Замок "BFD"</h1>
+                        <div class="options">
+                            <div class="option">Аренда</div>
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Accessories-Formwork/rack-lock.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+    
+                <!-- Блок 6 -->
+                <div class="block">
+                    <model-viewer 
+                        src="/details/universal-barrier/Universal-fencing-device.glb" 
+                        alt="3D модель Замок универсальный"
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Комплектующие для опалубки</h2>
+                        <h1>Ограждение универсальное</h1>
+                        <div class="options">
+                            <div class="option">Аренда</div>
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Accessories-Formwork/universal-fence.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+                <!-- Блок 7 -->
+                <div class="block">
+                    <model-viewer 
+                        src="/models/laminated-plywood.glb" 
+                        alt="3D модель Фанера ламинированная"
+                        
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Комплектующие для опалубки</h2>
+                        <h1>Фанера ламинированная</h1>
+                        <div class="options">
+                            <div class="option">Аренда</div>
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Accessories-Formwork/laminated-plywood.html.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+
+                <!-- Блок 8 -->
+                <div class="block">
+                    <model-viewer 
+                        src="/models/formwork-oil.glb" 
+                        alt="3D модель Смазка для опалубки"
+                        
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Комплектующие для опалубки</h2>
+                        <h1>Смазка для опалубки "Эмульсол"</h1>
+                        <div class="options">
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Accessories-Formwork/formwork-oil.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+
+                <!-- Блок 9 -->
+                <div class="block">
+                    <model-viewer 
+                        src="/details/double-level-brace/Two-level-strut.glb" 
+                        alt="3D модель Подкос для опалубки"
+                        
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Комплектующие для опалубки</h2>
+                        <h1>Подкос для опалубки</h1>
+                        <div class="options">
+                            <div class="option">Аренда</div>
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Accessories-Formwork/formwork-brace.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+
+                <!-- Блок 11 -->
+                <div class="block">
+                    <model-viewer 
+                        src="/models/wooden-beam.glb" 
+                        alt="3D модель Балка деревянная"
+                        
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Комплектующие для опалубки</h2>
+                        <h1>Балка деревянная для опалубки</h1>
+                        <div class="options">
+                            <div class="option">Аренда</div>
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Accessories-Formwork/wooden-beam.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+
+                <!-- Блок 12 -->
+                <div class="block">
+                    <model-viewer 
+                        src="/details/shield-storage-case/Shield-storage-cassette.glb" 
+                        alt="3D модель Касета для хранения щитов"
+                        
+                        camera-orbit="45deg 120deg 40m"
+                        field-of-view="30deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Комплектующие для опалубки</h2>
+                        <h1>Касета для хранения щитов</h1>
+                        <div class="options">
+                            <div class="option">Аренда</div>
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Accessories-Formwork/shield-storage-case.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+
+                <!-- Блок 13 -->
+                <div class="block">
+                    <model-viewer 
+                        src="/details/screw-pair/screw-pair.glb" 
+                        alt="3D модель Винтовая пара"
+                        
+                        camera-orbit="45deg 120deg 4m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Комплектующие для опалубки</h2>
+                        <h1>Винтовая пара</h1>
+                        <div class="options">
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Accessories-Formwork/screw-pair.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+
+                <!-- Блок 14 -->
+                <div class="block">
+                    <model-viewer 
+                        src="/details/end-swivel-pin/end-pin.glb" 
+                        alt="3D модель Шкворень торцевой"
+                        
+                        camera-orbit="45deg 120deg 4m"  
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Комплектующие для опалубки</h2>
+                        <h1>Анкер торцевой</h1>
+                        <div class="options">
+                            <div class="option">Аренда</div>
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Accessories-Formwork/end-swivel-pin.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+
+                <!-- Блок 15 -->
+                <div class="block">
+                    <model-viewer 
+                        src="/details/tr4-element-330x60/tr4-330-60.glb" 
+                        alt="3D модель Элемент TR4 330 x 60"
+                        
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="30deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Комплектующие для опалубки</h2>
+                        <h1>Элемент TR4 330 x 60</h1>
+                        <div class="options">
+                            <div class="option">Аренда</div>
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Accessories-Formwork/tr4-330x60.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+
+                <!-- Блок 16 -->
+                <div class="block">
+                    <model-viewer 
+                        src="/details/tr4-element-330x120/tr-330-120.glb" 
+                        alt="3D модель Элемент TR4 330 x 120"
+                        
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content">
+                        <h2>Комплектующие для опалубки</h2>
+                        <h1>Элемент TR4 330 x 120</h1>
+                        <div class="options">
+                            <div class="option">Аренда</div>
+                            <div class="option">Покупка</div>
+                        </div>
+                        <a href="/Catalog/Accessories-Formwork/tr4-330x120.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></а>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="/Components/footer.js" defer></script>
+    </main>
+</body>
+</html>

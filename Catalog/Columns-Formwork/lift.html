@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Опалубка лифтовых шахт</title>
+    <script src="/Scripts/magnbtn.js" defer></script>
+    <script src="/Scripts/headeranimation.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <script src="/Components/header.js"></script>
+    <main class="first-main" style="padding-top: 0; margin:0;">
+        <div class="left-side">
+            <div class="back" onclick="window.history.back()">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H19v-2z"/></svg>
+                Вернуться к поиску
+            </div>
+            
+            <div class="h1">Опалубка лифтовых шахт</div>
+            <div class="h2">
+                Мы предлагаем надежные опалубочные системы для строительства лифтовых шахт. Свяжитесь с нами, чтобы получить индивидуальное предложение или позвоните прямо сейчас!
+            </div>
+            <div class="tags">
+                <div class="tag">Аренда</div>
+                <div class="tag">Покупка</div>
+            </div>
+            <div class="price">
+                Запросить прайс
+                <a href="new-application.html"><button class="yellow-button-bl magnetic">Оставить Заявку</button></a>
+            </div>
+        </div>
+        
+        <div class="right-side">
+            <div class="content-box" style="margin-top: 10%; width: 100vh; height: 65vh; background-color: rgb(255, 255, 255);">
+                <!-- Use model-viewer to display a 3D model of the lift shaft formwork -->
+                <model-viewer
+                    src="details/lift/lift_01.glb"
+                    alt="3D модель опалубки лифтовых шахт"
+                    auto-rotate
+                    camera-controls
+                    style="width: 100%; height: 100%;">
+                </model-viewer>
+            </div>
+            
+            <!-- Product Description -->
+            <div class="right-text">
+                <h1>Описание товара</h1>
+                <p>
+                    Опалубка лифтовых шахт предназначена для строительства вертикальных конструкций в жилых и коммерческих зданиях. Это высококачественное оборудование обеспечивает точность и безопасность при возведении лифтовых шахт. Надежная конструкция гарантирует долгую службу.
+                </p>
+                <h1>Особенности:</h1>
+                <ul style="padding-left: 2%;">
+                    <li>Прочная стальная конструкция, устойчивая к нагрузкам и коррозии.</li>
+                    <li>Совместимость с различными системами и возможность точной регулировки.</li>
+                    <li>Простота монтажа и демонтажа, что ускоряет строительные процессы.</li>
+                </ul>
+                <h1>Применение:</h1>
+                <p>
+                    Опалубка лифтовых шахт идеально подходит для строительства вертикальных элементов в многоэтажных зданиях. Она оптимальна для использования на строительных площадках, обеспечивая высокую производительность и сокращение сроков строительства.
+                </p>
+            </div>
+            
+            <!-- Recommended Products -->
+            <div class="recomended">
+                <div class="block2">
+                    <model-viewer 
+                        src="/details/tie-rod/tie_rod_01.glb" 
+                        alt="3D модель Винт стяжной"
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content1">
+                        <h1>Винт стяжной</h1>
+                        <div class="description">
+                            Винт стяжной используется для крепления и фиксации опалубки. Обеспечивает надежное соединение между различными элементами системы.
+                        </div>
+                        <a href="tie-rod.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+                <div class="block2">
+                    <model-viewer 
+                        src="/details/form-brace/form_brace_01.glb" 
+                        alt="3D модель Подкос"
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content1">
+                        <h1>Подкос для опалубки</h1>
+                        <div class="description">
+                            Подкосы обеспечивают дополнительную устойчивость и поддержку для вертикальных элементов, таких как лифтовые шахты.
+                        </div>
+                        <a href="form-brace.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+                <div class="block2">
+                    <model-viewer 
+                        src="/details/formwork-oil/formwork_oil_01.glb" 
+                        alt="3D модель Смазка для опалубки"
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content1">
+                        <h1>Смазка для опалубки</h1>
+                        <div class="description">
+                            Смазка "Эмульсол" используется для облегчения демонтажа опалубки и предотвращения прилипания бетона к опалубке.
+                        </div>
+                        <a href="formwork-oil.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <script src="/Components/footer.js" defer></script>
+    </main>
+</body>
+</html>

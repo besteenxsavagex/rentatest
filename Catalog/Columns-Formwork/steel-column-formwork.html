@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Severyanin</title>
+    <script src="/Scripts/magnbtn.js" defer></script>
+    <script src="/Scripts/headeranimation.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <!-- Шапка -->
+    <script src="/Components/header.js"></script>
+    <main class="first-main" style="padding-top: 0; margin:0;">
+        <div class="left-side">
+            <div class="back" onclick="window.history.back()">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H19v-2z"/></svg>
+                Вернуться к поиску
+            </div>
+            
+            <div class="h1">Стальная опалубка колонн</div>
+            <div class="h2">
+                Оставьте нам ваши контакты, и наши специалисты индивидуально подготовят для вас наилучшее предложение, обеспечив оптимальные решения для вашего проекта. Вы также можете позвонить нам прямо сейчас!
+            </div>
+            <div class="tags">
+                <div class="tag">Аренда</div>
+                <div class="tag">Покупка</div>
+            </div>
+            <div class="price">
+                Запросить прайс
+                <a href="new-application.html"><button class="yellow-button-bl magnetic">Оставить Заявку</button></a>
+            </div>
+        </div>
+        
+        <div class="right-side">
+            <!-- Новое пространство с просмотром 3D -->
+            <div class="content-box" style="margin-top: 10%;width: 100vh; height: 65vh; background-color: rgb(255, 255, 255)">
+                <!-- Используем компонент model-viewer для 3D-модели -->
+                <model-viewer
+                    src="details/steel-column-formwork.glb" 
+                    alt="3D модель стальной опалубки колонн"
+                    auto-rotate
+                    camera-controls
+                    style="width: 100%; height: 100%;">
+                </model-viewer>
+            </div>
+            
+            <!-- Дополнительные элементы текста -->
+            <div class="right-text">
+                <h1>Описание товара</h1>
+                <p>
+                    Стальная опалубка колонн обеспечивает прочность и устойчивость в строительстве колонн. Она позволяет создавать структурно надежные и долговечные колонны, идеально подходящие для различных типов сооружений.
+                </p>
+                <h1>Особенности:</h1>
+                <ul style="padding-left: 2%;">
+                    <li>Высокая прочность благодаря стальной конструкции.</li>
+                    <li>Простота монтажа и демонтажа.</li>
+                    <li>Широкий диапазон размеров для различных проектов.</li>
+                </ul>
+                <h1>Применение:</h1>
+                <p>
+                    Стальная опалубка колонн идеально подходит для строительства жилых, коммерческих и промышленных зданий. Она гарантирует высокое качество и точность при формировании колонн.
+                </p>
+                <h1>Мы рекомендуем также:</h1>
+                <!-- Список рекомендуемых товаров -->
+                <div class="recomended">
+                    <div class="block2">
+                        <model-viewer 
+                            src="/details/small-panel-column.glb" 
+                            alt="3D модель мелкощитовой опалубки колонн"
+                            camera-orbit="45deg 120deg 20m"
+                            field-of-view="10deg"
+                            disable-zoom
+                            disable-pan>
+                        </model-viewer>
+                        <div class="block-content1">
+                            <h1>Мелкощитовая опалубка колонн</h1>
+                            <div class="description">
+                                Подходит для строительства небольших колонн или колонн нестандартных форм.
+                            </div>
+                            <a href="small-panel-column.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                        </div>
+                    </div>
+                    <div class="block2">
+                        <model-viewer 
+                            src="/details/round-column-formwork.glb" 
+                            alt="3D модель опалубки круглых колонн"
+                            camera-orbit="45deg 120deg 20m"
+                            field-of-view="10deg"
+                            disable-zoom
+                            disable-pan>
+                        </model-viewer>
+                        <div class="block-content1">
+                            <h1>Опалубка круглых колонн</h1>
+                            <div class="description">
+                                Используется для строительства круглых колонн, обеспечивая гладкую поверхность и точные размеры.
+                            </div>
+                            <a href="round-column-formwork.html"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="/Components/footer.js" defer></script>
+    </main>
+</body>
+</html>

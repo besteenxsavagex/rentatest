@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Severyanin</title>
+    <script src="/Scripts/magnbtn.js" defer></script>
+    <script src="/Scripts/headeranimation.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <!-- Шапка -->
+    <script src="/Components/header.js"></script>
+    <main class="first-main" style="padding-top: 0; margin:0;">
+        <div class="left-side">
+            <div class="back" onclick="window.history.back()">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H19v-2z"/></svg>
+                Вернуться к поиску
+            </div>
+            
+            <div class="h1">Защитные экраны</div>
+            <div class="h2">
+                Оставьте нам ваши контакты, и наши специалисты индивидуально <br>
+                подготовят для вас наилучшее предложение, обеспечив оптимальные <br>
+                решения для вашего проекта, или позвоните нам прямо сейчас!
+            </div>
+            <div class="tags">
+                <div class="tag">Аренда</div>
+                <div class="tag">Покупка</div>
+            </div>
+            <div class="price">
+                Запросить прайс
+                <a href="new-application.html"><button class="yellow-button-bl magnetic">Оставить Заявку</button></a>
+            </div>
+        </div>
+        
+        <div class="right-side">
+            <!-- Новое пространство с просмотром 3D -->
+            <div class="content-box" style="margin-top: 10%;width: 100vh; height: 65vh; background-color: rgb(255, 255, 255)">
+                <!-- Используем компонент model-viewer для 3D-модели -->
+                <model-viewer
+                    src="details/protective-screens/screen_01.glb" 
+                    alt="3D модель"
+                    auto-rotate
+                    camera-controls
+                    style="width: 100%; height: 100%;">
+                </model-viewer>
+            </div>
+            
+            <!-- Дополнительные элементы текста -->
+            <div class="right-text">
+                <h1>Описание товара</h1>
+                <p>
+                    Защитные экраны предназначены для обеспечения безопасности на стройплощадках и в других местах, где необходимо оградить от опасных рабочих зон. Используйте защитные экраны для обеспечения безопасности вашего проекта.
+                </p>
+                <h1>Особенности:</h1>
+                <ul style="padding-left: 2%;">
+                    <li>Прочная конструкция для надежной защиты от падающих предметов и других опасностей.</li>
+                    <li>Модульная система для удобства монтажа и демонтажа.</li>
+                    <li>Высокая стабильность и надежность даже при сильных ветрах и других неблагоприятных условиях.</li>
+                </ul>
+                <h1>Применение:</h1>
+                <p>
+                    Защитные экраны идеально подходят для использования на стройплощадках, в складских помещениях, на производственных объектах и в других местах, где необходима защита от опасных рабочих зон.
+                </p>
+                <h1>К этому мы рекомендуем приобрести:</h1>
+                <div class="recomended">
+                    <div class="block2">
+                        <model-viewer 
+                            src="/details/tie-rod/coupling_screw_01.glb" 
+                            alt="3D модель Винт стяжной"
+                            camera-orbit="45deg 120deg 20m"
+                            field-of-view="10deg"
+                            disable-zoom
+                            disable-pan>
+                        </model-viewer>
+                        <div class="block-content1">
+                            <h1>Дополнительные крепежные элементы</h1>
+                            <div class="description">
+                                Обеспечивают надежное крепление защитных экранов и увеличивают их устойчивость.
+                            </div>
+                            <a href="#"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                        </div>
+                    </div>
+                    <div class="block2">
+                        <model-viewer 
+                            src="/details/tie-rod/coupling_screw_01.glb" 
+                            alt="3D модель Винт стяжной"
+                            camera-orbit="45deg 120deg 20m"
+                            field-of-view="10deg"
+                            disable-zoom
+                            disable-pan>
+                        </model-viewer>
+                        <div class="block-content1">
+                            <h1>Опорные стойки</h1>
+                            <div class="description">
+                                Используются для поддержки защитных экранов и обеспечения их устойчивости.
+                            </div>
+                            <a href="#"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                        </div>
+                    </div>
+                    <div class="block2">
+                        <model-viewer 
+                            src="/details/tie-rod/coupling_screw_01.glb" 
+                            alt="3D модель Винт стяжной"
+                            camera-orbit="45deg 120deg 20m"
+                            field-of-view="10deg"
+                            disable-zoom
+                            disable-pan>
+                        </model-viewer>
+                        <div class="block-content1">
+                            <h1>Дополнительные элементы крепления</h1>
+                            <div class="description">
+                                Помогают установить защитные экраны в нужном положении и обеспечивают дополнительную стабильность.
+                            </div>
+                            <a href="#"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="/Components/footer.js" defer></script>
+    </main>
+</body>
+</html>

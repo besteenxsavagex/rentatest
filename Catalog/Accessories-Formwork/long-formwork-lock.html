@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Замок удлиненный для опалубки</title>
+    <script src="/Scripts/magnbtn.js" defer></script>
+    <script src="/Scripts/headeranimation.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <!-- Шапка -->
+    <script src="/Components/header.js"></script>
+    <main class="first-main" style="padding-top: 0; margin:0;">
+        <div class="left-side">
+            <div class="back" onclick="window.history.back()">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H19v-2z"/></svg>
+                Вернуться к поиску
+            </div>
+            
+            <div class="h1">Замок удлиненный для опалубки</div>
+            <div class="h2">
+                Свяжитесь с нами, чтобы получить индивидуальное предложение. Вы также можете позвонить нам прямо сейчас!
+            </div>
+            <div class="tags">
+                <div class="tag">Аренда</div>
+                <div class="tag">Покупка</div>
+            </div>
+            <div class="price">
+                Запросить прайс
+                <a href="new-application.html"><button class="yellow-button-bl magnetic">Оставить Заявку</button></a>
+            </div>
+        </div>
+        
+        <div class="right-side">
+            <!-- Пространство с просмотром 3D -->
+            <div class="content-box" style="margin-top: 10%;width: 100vh; height: 65vh; background-color: rgb(255, 255, 255)">
+                <!-- Используем компонент model-viewer для 3D-модели -->
+                <model-viewer
+                    src="/details/long-formwork-lock/extended-lock.glb" 
+                    alt="3D модель клинового замка"
+                    auto-rotate
+                    camera-controls
+                    field-of-view="8deg"
+                    style="width: 100%; height: 100%;">
+                </model-viewer>
+            </div>
+            
+            <!-- Описание товара -->
+            <div class="right-text">
+                <h1>Описание товара</h1>
+                <p>
+                    Замок удлиненный для опалубки — это прочный элемент, который обеспечивает дополнительную фиксацию при строительстве опалубки. Его удлиненная конструкция позволяет использовать его в ситуациях, где требуется более высокая стабильность и поддержка опалубки. Этот замок подходит для закрепления стен, колонн и других структур.
+                </p>
+                <h1>Особенности:</h1>
+                <ul style="padding-left: 2%;">
+                    <li>Удлиненная конструкция для дополнительной фиксации и усиления.</li>
+                    <li>Изготовлен из прочной стали, устойчив к коррозии и износу.</li>
+                    <li>Легко устанавливается и демонтируется, что ускоряет строительные процессы.</li>
+                </ul>
+                <h1>Применение:</h1>
+                <p>
+                    Замок удлиненный используется в опалубке при строительстве стен, колонн и перекрытий. Он обеспечивает надежное соединение элементов и помогает удерживать форму конструкции при бетонировании. Подходит для строительных проектов различного масштаба, от небольших жилых зданий до крупных промышленных объектов.
+                </p>
+            </div>
+            
+            <!-- Рекомендации -->
+            <div class="recomended">
+                <div class="block2">
+                    <model-viewer 
+                        src="/details/tie-rod/tie_rod_01.glb" 
+                        alt="3D модель винта стяжного"
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content1">
+                        <h1>Винт стяжной для опалубки</h1>
+                        <div class="description">
+                            Ключевой компонент для крепления элементов опалубки, обеспечивающий прочное соединение.
+                        </div>
+                        <a href="#"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+                
+                <div class="block2">
+                    <model-viewer 
+                        src="/details/formwork-oil/formwork_oil_01.glb" 
+                        alt="3D модель смазки для опалубки"
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content1">
+                        <h1>Смазка для опалубки</h1>
+                        <div класс="description">
+                            Обеспечивает легкий демонтаж опалубки и продлевает срок службы оборудования.
+                        </div>
+                        <a href="#"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+                
+                <div class="block2">
+                    <model-viewer 
+                        src="/details/laminated-plywood/laminated_plywood_01.glb" 
+                        alt="3D модель ламинированной фанеры"
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content1">
+                        <h1>Ламинированная фанера</h1>
+                        <div класс="description">
+                            Используется в опалубке для создания гладкой бетонной поверхности.
+                        </div>
+                        <a href="#"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+                
+                <div class="block2">
+                    <model-viewer 
+                        src="/details/long-formwork-lock/extended_lock.glb" 
+                        alt="3D модель подкоса для опалубки"
+                        camera-orbit="45deg 120deg 20m"
+                        field-of-view="10deg"
+                        disable-zoom
+                        disable-pan>
+                    </model-viewer>
+                    <div class="block-content1">
+                        <h1>Подкос для опалубки</h1>
+                        <div класс="description">
+                            Помогает удерживать опалубку в вертикальном положении для дополнительной стабильности.
+                        </div>
+                        <a href="#"><button class="gray-button magnetic">УЗНАТЬ БОЛЬШЕ</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="/Components/footer.js" defer></script>
+    </main>
+</body>
+</html>
