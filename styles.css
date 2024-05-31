@@ -1740,215 +1740,429 @@ textarea{
     }
 }
 
-/* Медиазапрос для ширины экрана от 1024px и выше */
-@media (min-width: 1024px) {
-    /* Увеличим ширину всей шапки */
-    header {
-        padding-left: 2%;
-        padding-right: 2%;
+/* Стили для экранов с шириной от 900px до 1150px */
+@media (max-width: 700px) and (min-width: 500px) {
+    .gray-button div{
+        display: none;
     }
-
-    /* Увеличим размеры навигационного меню и логотипа */
-    .first-left, .first-right, .logo-section {
-        width: auto; /* Установим ширину "авто", чтобы элементы распределялись в один ряд */
+    .third-header {
+        display: none;
     }
-
-    /* Используем flexbox для распределения элементов в один ряд */
+    .header-list {
+        height: 30px;
+    }
     .first-header {
-        justify-content: space-between;
-        flex-wrap: nowrap; /* Запретим перенос элементов на новую строку */
+        display: none;
     }
-
-    /* Восстановим отступы между элементами навигационного меню */
-    .first-left a, .first-right li {
-        margin-right: 20px; /* Добавим отступ справа между элементами */
+    .second-header {
+        height: 60px;
     }
-    
-    /* Увеличим размеры кнопок */
-    .gray-button-green.magnetic, .yellow-button-b.magnetic {
-        width: 200px;
-        height: 50px;
-        font-size: 16px;
+    #toggle-sidebar-btn {
+        height: 100%;
+        min-height: 40px;
+        margin-left: 20px;
+        font-size: 12px;
     }
-
-    /* Увеличим размеры иконки поиска */
+    header {
+        padding-left: 5%;
+    }
+    .first-header, .second-header, .third-header {
+        font-size: 11px;
+    }
+    .search-bar {
+        width: 250px;
+        height: 100%;
+        min-height: 35px;
+        font-size: 12px;
+    }
+    .gray-button-green.magnetic {
+        display: none;
+    }
     .lupa {
+        height: 22px;
+    }
+    .logo-section img {
+        max-width: 70px;
+    }
+}
+
+/* Стили для экранов с шириной от 900px до 1150px */
+@media (max-width: 800px) and (min-width: 700px) {
+    .third-header {
+        display: none;
+    }
+    .header-list {
+        height: 30px;
+    }
+    .first-header {
+        display: none;
+    }
+    .second-header {
+        height: 60px;
+    }
+    #toggle-sidebar-btn {
+        height: 100%;
+        min-height: 40px;
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    header {
+        padding-left: 5%;
+    }
+    .first-header, .second-header, .third-header {
+        font-size: 11px;
+    }
+    .search-bar {
+        width: 350px;
+        height: 100%;
+        min-height: 35px;
+        font-size: 12px;
+    }
+    .gray-button-green.magnetic {
+        display: none;
+    }
+    .lupa {
+        height: 22px;
+    }
+    .logo-section img {
+        max-width: 70px;
+    }
+}
+
+/* Стили для экранов с шириной от 900px до 1150px */
+@media (max-width: 900px) and (min-width: 800px) {
+    .third-header {
+        display: none;
+    }
+    .header-list {
+        height: 30px;
+    }
+    .first-header {
+        display: none;
+    }
+    .second-header {
+        height: 60px;
+    }
+    #toggle-sidebar-btn {
+        height: 100%;
+        min-height: 40px;
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    header {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .first-header, .second-header, .third-header {
+        font-size: 11px;
+    }
+    .search-bar {
+        width: 350px;
+        height: 100%;
+        min-height: 35px;
+        font-size: 12px;
+    }
+    .gray-button-green.magnetic {
+        width: 160px;
+        height: 40px;
+        font-size: 12px;
+    }
+    .lupa {
+        height: 22px;
+    }
+    .logo-section img {
+        max-width: 70px;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 900px) {
+    .third-header {
+        display: none;
+    }
+    .header-list {
+        height: 30px;
+    }
+    .first-header {
+        display: none;
+    }
+    .second-header {
+        height: 60px;
+    }
+    #toggle-sidebar-btn {
+        height: 100%;
+        min-height: 40px;
+        margin-left: 40px;
+        font-size: 12px;
+    }
+    header {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .first-header, .second-header, .third-header {
+        font-size: 11px;
+    }
+    .search-bar {
+        width: 100%;
+        min-width: 450px;
+        height: 100%;
+        min-height: 35px;
+        font-size: 12px;
+    }
+    .gray-button-green.magnetic {
+        width: 160px;
+        height: 40px;
+        font-size: 12px;
+    }
+    .lupa {
+        height: 22px;
+    }
+    .logo-section img {
+        max-width: 70px;
+    }
+}
+
+
+
+@media (max-width: 1150px) and (min-width: 1000px) {
+    .third-header {
+        display: none;
+    }
+    .header-list {
+        height: 30px;
+    }
+    .first-header {
+        display: none;
+    }
+    .second-header {
+        height: 60px;
+    }
+    #toggle-sidebar-btn {
+        height: 100%;
+        min-height: 40px;
+        margin-left: 40px;
+        font-size: 12px;
+    }
+    header {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .first-header, .second-header, .third-header {
+        font-size: 11px;
+    }
+    .search-bar {
+        width: 100%;
+        min-width: 520px;
+        height: 100%;
+        min-height: 35px;
+        font-size: 12px;
+    }
+    .gray-button-green.magnetic {
+        width: 160px;
+        height: 40px;
+        font-size: 12px;
+    }
+    .lupa {
+        height: 22px;
+    }
+    .logo-section img {
+        max-width: 70px;
+    }
+}
+
+/* Стили для экранов с шириной от 1300px до 1150px */
+@media (max-width: 1300px) and (min-width: 1150px) {
+    .third-header {
+        display: flex;
+        height: 30px;
+    }
+    .header-list {
+        height: 30px;
+    }
+    .first-header {
+        display: flex;
+        height: 10px;
+    }
+    .second-header {
+        height: 60px;
+    }
+    #toggle-sidebar-btn {
+        height: 100%;
+        min-height: 40px;
+        margin-left: 40px;
+        font-size: 12px;
+    }
+    header {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .first-header, .second-header, .third-header {
+        font-size: 11px;
+    }
+    .search-bar {
+        width: 100%;
+        min-width: 600px;
+        height: 100%;
+        min-height: 35px;
+        font-size: 12px;
+    }
+    .gray-button-green.magnetic {
+        width: 160px;
+        height: 40px;
+        font-size: 12px;
+    }
+    .lupa {
+        height: 22px;
+    }
+    .logo-section img {
+        max-width: 70px;
+    }
+}
+
+/* Стили для экранов с шириной от 1400px до 1300px */
+@media (max-width: 1400px) and (min-width: 1300px) {
+    .first-header {
         height: 20px;
     }
-
-    /* Увеличим размеры строки поиска */
-    .search-bar {
-        width: 850px;
-        height: 40px;
+    .second-header {
+        height: 80px;
     }
-    
-    /* Добавим отступ между логотипом и кнопкой каталог */
-    .logo-section {
-        display: flex;
-        align-items: center; /* Центрируем элементы по вертикали */
+    .third-header {
+        height: 35px;
     }
-    
+    .header-list {
+        height: 35px;
+    }
     #toggle-sidebar-btn {
-        margin-left: 20px; /* Добавим отступ слева */
+        height: 100%;
+        min-height: 45px;
+        margin-left: 40px;
     }
-}
-
-/* Медиазапрос для очень широких экранов (ширина более 1600px) */
-@media (min-width: 1600px) {
-    /* Увеличим ширину всей шапки */
     header {
         padding-left: 3%;
         padding-right: 3%;
     }
-
-    /* Увеличим размеры навигационного меню и логотипа */
-    .first-left, .first-right, .logo-section {
-        width: auto; /* Установим ширину "авто", чтобы элементы распределялись в один ряд */
+    .first-header, .second-header, .third-header {
+        font-size: 12px;
     }
-
-    /* Используем flexbox для распределения элементов в один ряд */
-    .first-header {
-        justify-content: space-between;
-        flex-wrap: nowrap; /* Запретим перенос элементов на новую строку */
+    .search-bar {
+        width: 100%;
+        min-width: 700px;
+        min-height: 30px;
     }
-
-    /* Восстановим отступы между элементами навигационного меню */
-    .first-left a, .first-right li {
-        margin-right: 20px; /* Добавим отступ справа между элементами */
-    }
-    
-    /* Увеличим размеры кнопок */
-    .gray-button-green.magnetic, .yellow-button-b.magnetic {
+    .gray-button-green.magnetic {
         width: 200px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .lupa {
+        height: 22px;
+    }
+    .logo-section img {
+        max-width: 70px;
+    }
+}
+
+/* Стили для экранов с шириной от 1500px до 1400px */
+@media (max-width: 1500px) and (min-width: 1400px) {
+    .third-header {
+        height: 40px;
+    }
+    .header-list {
+        height: 40px;
+    }
+    .first-header, .second-header, .third-header {
+        font-size: 13px;
+    }
+    .gray-button {
+        height: 45px;
+    }
+    .search-bar {
+        width: 100%;
+        min-width: 750px;
+    }
+    .gray-button-green.magnetic {
+        width: 240px;
+        height: 50px;
+        font-size: 14px;
+    }
+    .lupa {
+        height: 22px;
+    }
+    .logo-section img {
+        max-width: 90px;
+    }
+}
+
+/* Стили для экранов с шириной от 1750px до 1500px */
+@media (max-width: 1750px) and (min-width: 1500px) {
+    header {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .first-header, .second-header, .third-header {
+        font-size: 14px;
+    }
+    .search-bar {
+        width: 100%;
+        min-width: 850px;
+    }
+    .gray-button-green.magnetic {
+        width: 240px;
+        height: 50px;
+        font-size: 14px;
+    }
+    .lupa {
+        height: 22px;
+    }
+    .logo-section img {
+        max-width: 90px;
+    }
+}
+
+/* Стили для экранов с шириной от 2000px до 1750px */
+@media (max-width: 2000px) and (min-width: 1750px) {
+    header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .first-header, .second-header, .third-header {
+        font-size: 15px;
+    }
+    .search-bar {
+        width: 100%;
+        min-width: 950px;
+    }
+    .gray-button-green.magnetic {
+        width: 240px;
+        height: 50px;
+        font-size: 15px;
+    }
+    .lupa {
+        height: 22px;
+    }
+    .logo-section img {
+        max-width: 90px;
+    }
+}
+
+/* Стили для экранов с шириной 2000px и выше */
+@media (min-width: 2000px) {
+    .first-header, .second-header, .third-header {
+        font-size: 16px;
+    }
+    .search-bar {
+        width: 100%;
+        min-width: 1100px;
+    }
+    .gray-button-green.magnetic {
+        width: 240px;
         height: 50px;
         font-size: 16px;
     }
-
-    /* Увеличим размеры иконки поиска */
     .lupa {
-        height: 25px;
+        height: 22px;
     }
-
-    /* Увеличим размеры строки поиска */
-    .search-bar {
-        width: 950px;
-        height: 45px;
-    }
-    
-    /* Добавим отступ между логотипом и кнопкой каталог */
-    .logo-section {
-        display: flex;
-        align-items: center; /* Центрируем элементы по вертикали */
-    }
-    
-    #toggle-sidebar-btn {
-        margin-left: 20px; /* Добавим отступ слева */
+    .logo-section img {
+        max-width: 90px;
     }
 }
-
-/* Медиазапрос для широких экранов (ширина более 2000px) */
-@media (min-width: 1800px) {
-    /* Увеличим ширину всей шапки */
-    header {
-        padding-left: 3%;
-        padding-right: 3%;
-    }
-
-    /* Увеличим размеры навигационного меню и логотипа */
-    .first-left, .first-right, .logo-section {
-        width: auto; /* Установим ширину "авто", чтобы элементы распределялись в один ряд */
-    }
-
-    /* Используем flexbox для распределения элементов в один ряд */
-    .first-header {
-        justify-content: space-between;
-        flex-wrap: nowrap; /* Запретим перенос элементов на новую строку */
-    }
-
-    /* Восстановим отступы между элементами навигационного меню */
-    .first-left a, .first-right li {
-        margin-right: 25px; /* Добавим отступ справа между элементами */
-    }
-    
-    /* Увеличим размеры кнопок */
-    .gray-button-green.magnetic, .yellow-button-b.magnetic {
-        width: 220px;
-        height: 55px;
-        font-size: 17px;
-    }
-
-    /* Увеличим размеры иконки поиска */
-    .lupa {
-        height: 28px;
-    }
-    /* Увеличим размеры строки поиска */
-    .search-bar {
-        font-size: 16px; /* Увеличим размер шрифта */
-        width: 1100px;
-        height: 48px;
-    }
-    
-    /* Добавим отступ между логотипом и кнопкой каталог */
-    .logo-section {
-        display: flex;
-        align-items: center; /* Центрируем элементы по вертикали */
-    }
-    
-    #toggle-sidebar-btn {
-        margin-left: 25px; /* Добавим отступ слева */
-    }
-}
-
-/* Медиазапрос для широких экранов (ширина более 2000px) */
-@media (min-width: 1900px) {
-    /* Увеличим ширину всей шапки */
-    header {
-        padding-left: 3%;
-        padding-right: 3%;
-    }
-
-    /* Увеличим размеры навигационного меню и логотипа */
-    .first-left, .first-right, .logo-section {
-        width: auto; /* Установим ширину "авто", чтобы элементы распределялись в один ряд */
-    }
-
-    /* Используем flexbox для распределения элементов в один ряд */
-    .first-header {
-        justify-content: space-between;
-        flex-wrap: nowrap; /* Запретим перенос элементов на новую строку */
-    }
-
-    /* Восстановим отступы между элементами навигационного меню */
-    .first-left a, .first-right li {
-        margin-right: 25px; /* Добавим отступ справа между элементами */
-    }
-    
-    /* Увеличим размеры кнопок */
-    .gray-button-green.magnetic, .yellow-button-b.magnetic {
-        width: 220px;
-        height: 55px;
-        font-size: 17px;
-    }
-
-    /* Увеличим размеры иконки поиска */
-    .lupa {
-        height: 28px;
-    }
-    /* Увеличим размеры строки поиска */
-    .search-bar {
-        font-size: 16px; /* Увеличим размер шрифта */
-        width: 1200px;
-        height: 48px;
-    }
-    
-    /* Добавим отступ между логотипом и кнопкой каталог */
-    .logo-section {
-        display: flex;
-        align-items: center; /* Центрируем элементы по вертикали */
-    }
-    
-    #toggle-sidebar-btn {
-        margin-left: 25px; /* Добавим отступ слева */
-    }
-}
-
